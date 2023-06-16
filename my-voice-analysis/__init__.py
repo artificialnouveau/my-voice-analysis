@@ -296,7 +296,7 @@ def mysptotal(m,p):
         number_of_pauses='unknown'
         rate_of_speech='unknown'
         articulation_rate='unknown'
-        speaking_duration'unknown'
+        speaking_duration='unknown'
         original_duration='unknown'
         balance='unknown'
         f0_mean='unknown'
