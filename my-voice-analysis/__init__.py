@@ -263,20 +263,20 @@ def mysptotal(m,p):
                           "original_duration":z5[5,:],"balance":z5[6,:],"f0_mean":z5[7,:],"f0_std":z5[8,:],"f0_median":z5[9,:],"f0_min":z5[10,:],"f0_max":z5[11,:],
                           "f0_quantile25":z5[12,:],"f0_quan75":z5[13,:]})
         print(dataset.T)
-        number_of_syllables=z5[0,:]
-        number_of_pauses=z5[1,:]
-        rate_of_speech=z5[2,:]
-        articulation_rate=z5[3,:]
-        speaking_duration=z5[4,:]
-        original_duration=z5[5,:]
-        balance=z5[6,:]
-        f0_mean=z5[7,:]
-        f0_std=z5[8,:]
-        f0_median=z5[9,:]
-        f0_min=z5[10,:]
-        f0_max=z5[11,:]
-        f0_quantile25=z5[12,:]
-        f0_quan75=z5[13,:]
+        number_of_syllables=int(z5[0,:][0])
+        number_of_pauses=int(z5[1,:][0])
+        rate_of_speech=int(z5[2,:][0])
+        articulation_rate=int(z5[3,:][0])
+        speaking_duration=int(z5[4,:][0])
+        original_duration=int(z5[5,:][0])
+        balance=int(z5[6,:][0])
+        f0_mean=int(z5[7,:][0])
+        f0_std=int(z5[8,:][0])
+        f0_median=int(z5[9,:][0])
+        f0_min=int(z5[10,:][0])
+        f0_max=int(z5[11,:][0])
+        f0_quantile25=int(z5[12,:][0])
+        f0_quan75=int(z5[13,:][0])
     except:
         print ("Try again the sound of the audio was not clear")
         dataset=pd.DataFrame({"number_of_syllables":[np.nan],
