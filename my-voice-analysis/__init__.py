@@ -306,7 +306,7 @@ def mysptotal(m,p):
         f0_max='unknown'
         f0_quantile25='unknown'
         f0_quan75='unknown'
-    return dataset,number_ of_syllables,number_of_pauses,rate_of_speech,articulation_rate,speaking_duration,original_duration,balance,f0_mean,f0_std,f0_median,f0_min,f0_max,f0_quantile25,f0_quan75
+    return dataset,number_of_syllables,number_of_pauses,rate_of_speech,articulation_rate,speaking_duration,original_duration,balance,f0_mean,f0_std,f0_median,f0_min,f0_max,f0_quantile25,f0_quan75
 
 def mysppron(m,p):
     sound=p+"/"+m+".wav"
