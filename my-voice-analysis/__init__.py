@@ -263,6 +263,20 @@ def mysptotal(m,p):
                           "original_duration":z5[5,:],"balance":z5[6,:],"f0_mean":z5[7,:],"f0_std":z5[8,:],"f0_median":z5[9,:],"f0_min":z5[10,:],"f0_max":z5[11,:],
                           "f0_quantile25":z5[12,:],"f0_quan75":z5[13,:]})
         print(dataset.T)
+        number_ of_syllables=z5[0,:]
+        number_of_pauses=z5[1,:]
+        rate_of_speech=z5[2,:]
+        articulation_rate=z5[3,:]
+        speaking_duration=z5[4,:]
+        original_duration=z5[5,:]
+        balance=z5[6,:]
+        f0_mean=z5[7,:]
+        f0_std=z5[8,:]
+        f0_median=z5[9,:]
+        f0_min=z5[10,:]
+        f0_max"z5[11,:]
+        f0_quantile25=z5[12,:]
+        f0_quan75=z5[13,:]
     except:
         print ("Try again the sound of the audio was not clear")
         dataset=pd.DataFrame({"number_ of_syllables":[np.nan],
@@ -278,8 +292,21 @@ def mysptotal(m,p):
                       "f0_min":[np.nan],
                       "f0_max":[np.nan],
                       "f0_quantile25":np.nan,"f0_quan75":[np.nan]})
-        
-    return dataset
+        number_ of_syllables='unknown'
+        number_of_pauses='unknown'
+        rate_of_speech='unknown'
+        articulation_rate='unknown'
+        speaking_duration'unknown'
+        original_duration='unknown'
+        balance='unknown'
+        f0_mean='unknown'
+        f0_std='unknown'
+        f0_median='unknown'
+        f0_min='unknown'
+        f0_max='unknown'
+        f0_quantile25='unknown'
+        f0_quan75='unknown'
+    return dataset,number_ of_syllables,number_of_pauses,rate_of_speech,articulation_rate,speaking_duration,original_duration,balance,f0_mean,f0_std,f0_median,f0_min,f0_max,f0_quantile25,f0_quan75
 
 def mysppron(m,p):
     sound=p+"/"+m+".wav"
