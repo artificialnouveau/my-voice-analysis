@@ -263,6 +263,7 @@ def mysptotal(m,p):
                           "original_duration":z5[5,:],"balance":z5[6,:],"f0_mean":z5[7,:],"f0_std":z5[8,:],"f0_median":z5[9,:],"f0_min":z5[10,:],"f0_max":z5[11,:],
                           "f0_quantile25":z5[12,:],"f0_quan75":z5[13,:]})
         print (dataset.T)
+        return dataset
     except:
         print ("Try again the sound of the audio was not clear")
     return;
@@ -339,16 +340,34 @@ def myspgend(m,p):
             mmm=0.35
         if z4>97 and z4<=114:
             print("a Male, mood of speech: Showing no emotion, normal, p-value/sample size= :%.2f" % (mmm), (nnn))
+            gender = "male"
+            emotion = "no_emotion"
+            return gender, emotion
         elif z4>114 and z4<=135:
             print("a Male, mood of speech: Reading, p-value/sample size= :%.2f" % (mmm), (nnn))
+            gender = "male"
+            emotion = "reading"
+            return gender, emotion
         elif z4>135 and z4<=163:
             print("a Male, mood of speech: speaking passionately, p-value/sample size= :%.2f" % (mmm), (nnn))
+            gender = "male"
+            emotion = "passionate"
+            return gender, emotion
         elif z4>163 and z4<=197:
             print("a female, mood of speech: Showing no emotion, normal, p-value/sample size= :%.2f" % (mmm), (nnn))
+            gender = "female"
+            emotion = "no_emotion"
+            return gender, emotion
         elif z4>197 and z4<=226:
             print("a female, mood of speech: Reading, p-value/sample size= :%.2f" % (mmm), (nnn))
+            gender = "female"
+            emotion = "reading"
+            return gender, emotion
         elif z4>226 and z4<=245:
             print("a female, mood of speech: speaking passionately, p-value/sample size= :%.2f" % (mmm), (nnn))
+            gender = "female"
+            emotion = "passionate"
+            return gender, emotion
         else:
             print("Voice not recognized")
     except:
