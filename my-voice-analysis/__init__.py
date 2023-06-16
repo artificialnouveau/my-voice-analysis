@@ -262,11 +262,24 @@ def mysptotal(m,p):
         dataset=pd.DataFrame({"number_ of_syllables":z5[0,:],"number_of_pauses":z5[1,:],"rate_of_speech":z5[2,:],"articulation_rate":z5[3,:],"speaking_duration":z5[4,:],
                           "original_duration":z5[5,:],"balance":z5[6,:],"f0_mean":z5[7,:],"f0_std":z5[8,:],"f0_median":z5[9,:],"f0_min":z5[10,:],"f0_max":z5[11,:],
                           "f0_quantile25":z5[12,:],"f0_quan75":z5[13,:]})
-        print (dataset.T)
-        return dataset.T
+        print(dataset.T)
     except:
         print ("Try again the sound of the audio was not clear")
-    # return;
+        dataset=pd.DataFrame({"number_ of_syllables":[np.nan],
+                      "number_of_pauses":[np.nan],
+                      "rate_of_speech":[np.nan],
+                      "articulation_rate":[np.nan],
+                      "speaking_duration":[np.nan],
+                     "original_duration":[np.nan],
+                      "balance":[np.nan],
+                      "f0_mean":[np.nan],
+                      "f0_std":[np.nan],
+                      "f0_median":[np.nan],
+                      "f0_min":[np.nan],
+                      "f0_max":[np.nan],
+                      "f0_quantile25":np.nan,"f0_quan75":[np.nan]})
+        
+    return dataset
 
 def mysppron(m,p):
     sound=p+"/"+m+".wav"
@@ -364,6 +377,8 @@ def myspgend(m,p):
             emotion = "passionate"
         else:
             print("Voice not recognized")
-        return gender, emotion
     except:
         print ("Try again the sound of the audio was not clear")
+        gender = "unknown"
+        emotion = "unknown"
+    return gender, emotion
