@@ -274,7 +274,7 @@ def mysptotal(m,p):
         f0_std=z5[8,:]
         f0_median=z5[9,:]
         f0_min=z5[10,:]
-        f0_max"z5[11,:]
+        f0_max=z5[11,:]
         f0_quantile25=z5[12,:]
         f0_quan75=z5[13,:]
     except:
