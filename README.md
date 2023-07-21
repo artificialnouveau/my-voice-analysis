@@ -42,6 +42,12 @@ Note: Audio files must be in .wav format, recorded at 44 kHz sample frame and 16
 
 The application will perform the analysis and output the results in the text area below the button. The results include the speaker's gender and various voice characteristics. 
 
+To run the application:
+
+    Open terminal.
+    Navigate to the directory where the `voice_analysis_app.py` file is located using the cd command. Example: `cd path/to/directory`.
+    Run the script by typing `python voice_analysis_app.py`.
+
 ## Additional Information
 The application requires `myspsolution.praat` file from My-Voice Analysis. If it is not present in the application directory, it will automatically download the file from [this link](https://raw.githubusercontent.com/Shahabks/my-voice-analysis/master/myspsolution.praat).
 
