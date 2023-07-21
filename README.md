@@ -1,3 +1,56 @@
+# Voice Analysis App
+
+## Introduction
+This is a Python-based application for analyzing voice characteristics from audio files. The application is built using the Tkinter GUI framework with the customtkinter and ttkthemes for a modern look and feel. It uses the My-Voice Analysis library to provide analysis features such as:
+
+- Gender recognition
+- Speech mood (semantic analysis)
+- Pronunciation posterior score
+- Articulation-rate
+- Speech rate
+- Filler words
+
+## Requirements
+- Python 3.7+
+- myprosody
+- tkinter
+- customtkinter
+- ttkthemes
+- wave
+- requests
+- pydub
+
+You can install the necessary libraries using pip:
+```
+pip install -r requirements.txt
+```
+The requirements.txt file should include:
+```
+myprosody
+tkinter
+customtkinter
+ttkthemes
+wave
+requests
+pydub
+```
+
+## Usage
+When you start the application, you will see a single "Open Audio File" button. Clicking this button will open a file dialog, where you can select an audio file to analyze.
+
+Note: Audio files must be in .wav format, recorded at 44 kHz sample frame and 16 bits of resolution. 
+
+The application will perform the analysis and output the results in the text area below the button. The results include the speaker's gender and various voice characteristics. 
+
+## Additional Information
+The application requires `myspsolution.praat` file from My-Voice Analysis. If it is not present in the application directory, it will automatically download the file from [this link](https://raw.githubusercontent.com/Shahabks/my-voice-analysis/master/myspsolution.praat).
+
+Please note that the analysis performed by the application may not always be accurate, especially for short audio clips or audio of poor quality. 
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
 [![GitHub stars](https://img.shields.io/github/stars/Shahabks/my-voice-analysis?style=flat-square)](https://github.com/Shahabks/my-voice-analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Shahabks/my-voice-analysis?style=flat-square&color=blueviolet)](https://github.com/Shahabks/my-voice-analysis/network/members)
 
