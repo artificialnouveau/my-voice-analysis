@@ -7,7 +7,7 @@ from tkinter.ttk import Progressbar
 from ttkthemes import ThemedStyle
 from customtkinter import CTkButton
 from pydub import AudioSegment
-from myprosody import myprosody as mysp
+import myspsolution as mysp
 
 class VoiceAnalysisApp(tk.Tk):
     def __init__(self):
