@@ -26,7 +26,8 @@ pip install -r requirements.txt
 ```
 The requirements.txt file should include:
 ```
-myprosody
+myspsolution
+json
 tkinter
 customtkinter
 ttkthemes
@@ -44,17 +45,16 @@ The application will perform the analysis and output the results in the text are
 
 To run the application:
 
-    Open terminal.
-    Navigate to the directory where the `voice_analysis_app.py` file is located using the cd command. Example: `cd path/to/directory`.
-    Run the script by typing `python voice_analysis_app.py`.
+- Open terminal.
+- Navigate to the directory where the `voice_analysis_app.py` file is located using the cd command. Example: `cd path/to/directory`.
+- Run the script by typing `python voice_analysis_app.py`.
+
+After you analyze your wav file it will save a json file with your analysis
 
 ## Additional Information
 The application requires `myspsolution.praat` file from My-Voice Analysis. If it is not present in the application directory, it will automatically download the file from [this link](https://raw.githubusercontent.com/Shahabks/my-voice-analysis/master/myspsolution.praat).
 
 Please note that the analysis performed by the application may not always be accurate, especially for short audio clips or audio of poor quality. 
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 [![GitHub stars](https://img.shields.io/github/stars/Shahabks/my-voice-analysis?style=flat-square)](https://github.com/Shahabks/my-voice-analysis/stargazers)
