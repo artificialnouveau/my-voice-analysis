@@ -2,8 +2,10 @@ import os
 import json
 import tkinter as tk
 from tkinter import filedialog, messagebox
+from tkinter.ttk import Progressbar
+from ttkthemes import ThemedStyle
+from customtkinter import CTkButton
 import requests
-from pydub import AudioSegment
 import wave
 import myspsolution as mysp
 
